@@ -12,4 +12,8 @@ public class Calculator {
     public  int getTemperatureCelsius(float f){
         return (int)(5f/9 *(f-32));
     }
+
+
+
+
 }
