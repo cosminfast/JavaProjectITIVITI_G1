@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class LogicalOperations {
@@ -158,5 +159,20 @@ public class LogicalOperations {
             }
         }
     }
+
+//    Scrieti o metoda Java, care sa primeasca parametru o Lista, si sa afiseze, pe rand,
+//    toate valorile din lista, dar invers(de la capat la inceput).
+
+
+    public void reverseList(List<Integer> list){
+        List<Integer> newList = new ArrayList<>();
+        for (int x : list){
+            newList.add(0, x);
+        }
+        list.clear();
+        list.addAll(newList);
+    }
+
+
 
 }

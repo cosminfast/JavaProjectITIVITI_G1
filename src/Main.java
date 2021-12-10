@@ -75,7 +75,7 @@ public class Main {
 
 //        System.out.println(op.computeAverage());
 
-        int[] arr = op.populateArray(1,100);
+        int[] arr = op.populateArray(1, 100);
 //        System.out.println(op.getAverage(arr));
 
 //        op.printArray(arr);
@@ -90,20 +90,19 @@ public class Main {
         list.add(4);
 
         list.add(0, 0);
-        list.set(0, -1);
-        System.out.println(list.get(0));
-        System.out.println(list);
-//        list.remove(3);
+//        list.set(0, -1);
+//        System.out.println(list.get(0));
 //        System.out.println(list);
-        list.remove(Integer.valueOf(3));
-        System.out.println(list);
-
-
-
-        op.printListFromNumber(list, 2);
-
-
-
+////        list.remove(3);
+////        System.out.println(list);
+//        list.remove(Integer.valueOf(3));
+//        System.out.println(list);
+//
+//
+//
+//        op.printListFromNumber(list, 2);
+//
+//
 
 
 //        Scrieti o metoda Java care sa primeasca o Lista si sa returneze
@@ -111,6 +110,31 @@ public class Main {
 
 // Scrieti o metoda Java care sa primeasca o Lista si sa returneze o alta
 // lista, care sa contina doar numerele pare din lista primita.
+
+
+//        System.out.println(list);
+//        op.reverseList(list);
+//        System.out.println(list);
+//
+
+//        int z = Integer.valueOf(scan.nextLine());
+//        System.out.println(z);
+
+//        int number = read.getInt();
+//        System.out.println(number);
+//
+//
+        ReadFromKeyboard read = new ReadFromKeyboard();
+//        int[] array = read.getArray();
+//        op.printArray(array);
+//
+
+        Sleep.waitFor(2);
+        List<Integer> myList = read.getList();
+        System.out.println(myList);
+
+
+
 
     }
 
