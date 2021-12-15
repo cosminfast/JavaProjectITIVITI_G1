@@ -1,3 +1,5 @@
+package Calculator;
+
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.List;
@@ -34,11 +36,19 @@ public class ReadFromKeyboard {
     }
 
     public List<Integer> getList() {
-        List<Integer> myList = new ArrayList<>();
-
-        Scanner scan = new Scanner(System.in);
         System.out.println("Enter list values, type exit for end:");
+        return readList();
+    }
+
+    public List<Integer> getList(String message) {
+        System.out.println(message);
+        return readList();
+    }
+
+    private List<Integer> readList(){
+        List<Integer> myList = new ArrayList<>();
         do {
+            Scanner scan = new Scanner(System.in);
             try {
                 int value = scan.nextInt();
                 myList.add(value);

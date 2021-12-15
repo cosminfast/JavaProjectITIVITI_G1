@@ -1,3 +1,5 @@
+package Calculator;
+
 import java.util.HashMap;
 
 public class Login {

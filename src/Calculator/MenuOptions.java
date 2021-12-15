@@ -1,3 +1,7 @@
+package Calculator;
+
+import java.util.List;
+
 public class MenuOptions {
 
 
@@ -5,9 +9,9 @@ public class MenuOptions {
     Calculator calc = new Calculator();
 
     protected void doSum() {
-        System.out.println("Enter the values you want to add: ");
+        List<Integer> givenList = read.getList("Enter the values you want to add, every value on new line or type exit to stop: ");
         System.out.println("The sum is: " +
-                calc.sum(read.getInt(), read.getInt()));
+                calc.sum(givenList));
     }
 
     protected void doSubstract() {
